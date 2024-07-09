@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // aggiungo date partenza e arrivo treni
         Schema::table('trains', function (Blueprint $table) {
             $table->date('data_di_partenza')->nullable();
             $table->date('data_di_arrivo')->nullable();

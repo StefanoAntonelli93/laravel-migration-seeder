@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // agginugo dati per tabella trains 
         Schema::table('trains', function (Blueprint $table) {
             $table->string('azienda');
             $table->string('stazione_di_partenza');

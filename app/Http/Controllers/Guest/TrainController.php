@@ -16,7 +16,9 @@ class TrainController extends Controller
         $today = Carbon::today()->toDateString();
 
         // prendo solo i treni che partono oggi
-        $trains = Train::where('data_di_partenza', $today)->get();
+        $trains = Train::where('data_di_partenza', $today)
+            ->orderBy('azienda', 'ASC')
+            ->get();
         // trasformo in array associativo
         $data = [
             'trains' => $trains

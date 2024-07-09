@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // creo tabella trains
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
