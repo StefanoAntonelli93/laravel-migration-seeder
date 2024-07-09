@@ -10,8 +10,11 @@
 </head>
 
 <body>
-    <h1>Trains table</h1>
-    <img src="{{ Vite::asset('resources/img/logo.jpg') }}" alt="pic">
+    @include('shared.header')
+    <main>
+        @include('shared.cards')
+    </main>
+    @include('shared.footer')
 </body>
 
 </html>

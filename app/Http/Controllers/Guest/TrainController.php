@@ -5,17 +5,23 @@ namespace App\Http\Controllers\Guest;
 use App\Http\Controllers\Controller;
 use App\Models\Train;
 use Illuminate\Http\Request;
+// uso libreria Carbon
+use Carbon\Carbon;
 
 class TrainController extends Controller
 {
     public function index()
     {
-        $trains = Train::all();
+        // data di oggi
+        $today = Carbon::today()->toDateString();
+
+        // prendo solo i treni che partono oggi
+        $trains = Train::where('data_di_partenza', "2024-07-10")->get();
         // trasformo in array associativo
         $data = [
             'trains' => $trains
         ];
-        dd($trains);
+        // dd($today);
         return view('home', $data);
     }
 }
