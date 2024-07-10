@@ -1,4 +1,8 @@
 @extends('layouts.app')
+
+@section('page-title')
+    Trains
+@endsection
 @section('trains')
     <section>
         <div class="container py-4 mt-4">
