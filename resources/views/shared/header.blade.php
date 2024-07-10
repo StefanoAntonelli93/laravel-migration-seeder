@@ -1,5 +1,5 @@
 <header class="p-3 text-center bg-success text-white">
-    <h1 class="mt-3 fw-semibold">TRAIN FOR BOOLEAN</h1>
+    <h1 class="mt-3 fw-semibold">TRAIN FOR BOOLEAN <i class="fa-solid fa-dragon"></i></h1>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid bg-success">
             <div class="collapse navbar-collapse" id="navbarNav">
