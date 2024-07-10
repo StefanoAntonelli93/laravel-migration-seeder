@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
+@section('home')
+    <div class="container vh-100 p-5 mt-5">
+        <div class="content text-center border border-success rounded-2 p-3">
+            <P>LAST MINUTE</P>
+            <a href="{{ route('trains') }}">
+                <p>Treni in partenza oggi</p>
+            </a>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trains</title>
-    <!-- Includiamo gli assets con la direttiva vite-->
-    @vite('resources/js/app.js')
-</head>
-
-<body>
-    @include('shared.header')
-    <main>
-        @include('shared.cards')
-    </main>
-    @include('shared.footer')
-</body>
-
-</html>
+    </div>
+@endsection

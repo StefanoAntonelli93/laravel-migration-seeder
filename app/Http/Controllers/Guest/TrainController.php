@@ -24,6 +24,6 @@ class TrainController extends Controller
             'trains' => $trains
         ];
         // dd($today);
-        return view('home', $data);
+        return view('trains', $data);
     }
 }
