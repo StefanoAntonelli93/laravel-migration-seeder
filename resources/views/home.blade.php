@@ -7,7 +7,7 @@
         <div class="content text-center border border-success rounded-2 p-3">
             <P>LAST MINUTE</P>
             <a href="{{ route('trains') }}">
-                <p>Treni in partenza oggi</p>
+                <p>Vai ai treni</p>
             </a>
         </div>
 

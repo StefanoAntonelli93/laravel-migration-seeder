@@ -15,10 +15,15 @@ class TrainController extends Controller
         // data di oggi
         $today = Carbon::today()->toDateString();
 
-        // prendo solo i treni che partono oggi
-        $trains = Train::where('data_di_partenza', $today)
-            ->orderBy('azienda', 'ASC')
-            ->get();
+        // // prendo solo i treni che partono oggi
+        // $trains = Train::where('data_di_partenza', $today)
+        //     ->orderBy('azienda', 'ASC')
+        //     ->get();
+
+        // prendo tutti i treni (esercizio con Faker)
+        $trains = Train::all();
+
+
         // trasformo in array associativo
         $data = [
             'trains' => $trains
